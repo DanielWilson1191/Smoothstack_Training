@@ -1,4 +1,4 @@
-package javaBasics1;
+package Assignment1;
 
 /*
  * Daniel Wilson
