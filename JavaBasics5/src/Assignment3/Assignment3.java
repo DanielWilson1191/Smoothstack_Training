@@ -19,20 +19,18 @@ public class Assignment3 {
 	 */
 	public static void main(String[] args) {
 		// Call doubling method, pass a given array, and display results
-		System.out.println(Arrays.toString(doubling(new int[] { 1, 2, 3 })));
-		System.out.println(Arrays.toString(doubling(new int[] { 6, 8, 6, 8, -1 })));
-		System.out.println(Arrays.toString(doubling(new int[] {  })));
-
+		System.out.println(Arrays.toString(doubling.doubling(new int[] { 1, 2, 3 })));
+		System.out.println(Arrays.toString(doubling.doubling(new int[] { 6, 8, 6, 8, -1 })));
+		System.out.println(Arrays.toString(doubling.doubling(new int[] {  })));
 	}
 
 	// Method accepts an int array as an argument,
 	// doubles each element, and reassigns the
 	// current element with the result of each calculation.
-	public static int[] doubling(int[] list) {
+	public static Doubling doubling = (list) -> {
 		for (int ind = 0; ind < list.length; ind++) {
 			list[ind] = list[ind] * 2;
 		}
 		return list;
-	}
-
+	};
 }
