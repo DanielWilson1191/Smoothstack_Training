@@ -20,9 +20,9 @@ public class Assignment4 {
 	 */
 	public static void main(String[] args) {
 		// Call doubling method, pass a given array, and display results
-		System.out.println(Arrays.toString(noX(new String[] { "ax", "bb", "cx" })));
-		System.out.println(Arrays.toString(noX(new String[] { "xxax", "xbxbx", "xxcx" })));
-		System.out.println(Arrays.toString(noX(new String[] { "x" })));
+		System.out.println(Arrays.toString(noX.noX(new String[] { "ax", "bb", "cx" })));
+		System.out.println(Arrays.toString(noX.noX(new String[] { "xxax", "xbxbx", "xxcx" })));
+		System.out.println(Arrays.toString(noX.noX(new String[] { "x" })));
 
 	}
 
@@ -30,11 +30,11 @@ public class Assignment4 {
 	// removes each instance of the char "x" from entire
 	// String, and reassigns the current element with
 	// the result of each reformatting.
-	public static String[] noX(String[] list) {
+	public static NoX noX = (list) -> {
 		for (int ind = 0; ind < list.length; ind++) {
 			list[ind] = list[ind].replace("x", "");
 		}
 		return list;
-	}
+	};
 
 }
